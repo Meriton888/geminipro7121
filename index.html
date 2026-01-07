@@ -1,0 +1,278 @@
+<?php 
+/*
+Template Name: Gemini Pro Premium
+*/
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Order Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Gemini Pro Theme Colors */
+        .gemini-gradient { background: linear-gradient(135deg, #1c69ff 0%, #8e44ad 100%); }
+        .gemini-text { color: #1c69ff; }
+        .gemini-bg-light { background-color: #f0f4ff; }
+        .gemini-border { border-color: #c7d2fe; }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        
+        /* Selection style for easy copying */
+        ::selection {
+            background: #1c69ff;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col pb-10">
+
+    <!-- Top Banner -->
+    <div class="gemini-gradient text-white py-3 text-center font-semibold shadow-md tracking-wide">
+        <i class="fas fa-check-circle mr-2"></i> Order Confirmed
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow container mx-auto px-4 py-8 max-w-4xl">
+        
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-slate-900 mb-2">Thanks for your order! 🚀</h1>
+            <p class="text-slate-500 text-lg">Here is everything you need to know to access your files and bonuses.</p>
+        </div>
+
+        <!-- SECTION 1: Access Files (Grid Layout) -->
+        <div class="grid md:grid-cols-2 gap-6 mb-10">
+            
+            <!-- Card 1: Digital Download -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full gemini-bg-light flex items-center justify-center mr-4">
+                        <i class="fas fa-cloud-download-alt gemini-text text-xl"></i>
+                    </div>
+                    <h2 class="text-xl font-bold text-slate-900">Digital Download</h2>
+                </div>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">Purchased a ready-made file? Your files are available instantly.</p>
+                <div class="bg-slate-50 p-3 rounded-lg text-sm border-l-4 border-slate-700">
+                    <strong>Action:</strong> Go to your Etsy Profile &rarr; <span class="underline decoration-dotted">Purchases & Reviews</span> to download.
+                </div>
+            </div>
+
+            <!-- Card 2: Made-to-Order -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-purple-50 flex items-center justify-center mr-4">
+                        <i class="fas fa-magic text-purple-600 text-xl"></i>
+                    </div>
+                    <h2 class="text-xl font-bold text-slate-900">Made-to-Order Item</h2>
+                </div>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">We are crafting this specifically for you!</p>
+                <div class="bg-purple-50 p-3 rounded-lg text-sm border-l-4 border-purple-500">
+                    <strong>Action:</strong> Please <span class="font-bold">reply to this message</span> with your email address. We will send files within 1 business day.
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: Warranty & Bonuses -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-10 border border-slate-200">
+            <div class="bg-slate-900 text-white p-4 text-center">
+                <h2 class="text-lg font-bold uppercase tracking-wide flex items-center justify-center">
+                    <i class="fas fa-shield-alt mr-2 text-blue-400"></i> Warranty & Free Bonuses
+                </h2>
+            </div>
+            
+            <div class="p-8">
+                <!-- Step 1: The Standard -->
+                <div class="flex items-start mb-8">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="fas fa-check-circle text-teal-500 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold text-slate-900">Standard Protection (Included)</h3>
+                        <p class="text-slate-600">Your purchase automatically includes a <strong>3-Year Warranty</strong> covering support and file replacements.</p>
+                    </div>
+                </div>
+
+                <hr class="border-slate-100 my-6">
+
+                <!-- Step 2: The Upgrade -->
+                <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 relative">
+                    <div class="absolute -top-3 left-6 bg-blue-600 text-white px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider shadow-sm">
+                        Unlock Premium Benefits
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 mt-2">How to get a Lifetime Warranty + Free Gift</h3>
+                    <p class="text-slate-600 mb-5 text-sm">Upgrade your coverage and unlock your bonus in two simple steps:</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <!-- Step A -->
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-blue-100 flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-bold mr-3">1</div>
+                            <span class="font-medium text-sm">Leave a feedback rating for your purchase</span>
+                        </div>
+                        <!-- Step B -->
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-blue-100 flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mr-3">2</div>
+                            <span class="font-medium text-sm">We automatically upgrade you to Lifetime Warranty</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex items-center text-xs font-semibold text-blue-800 bg-blue-100 inline-block px-3 py-1 rounded-full">
+                        <i class="fas fa-gift mr-2"></i>
+                        <span>Bonus: Free Software Gift Pack (Value: $50+) included</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: The Upsell -->
+        <div class="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl shadow-xl text-white p-8 relative overflow-hidden group mb-10">
+            <!-- Background decoration -->
+            <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-blue-500 opacity-20 rounded-full blur-3xl group-hover:opacity-30 transition duration-500"></div>
+            
+            <div class="relative z-10 text-center md:text-left md:flex md:items-center md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <span class="bg-teal-400 text-black text-xs font-bold px-2 py-1 rounded uppercase mb-2 inline-block">Exclusive Offer</span>
+                    <h2 class="text-2xl font-bold mb-2">Want everything in our store?</h2>
+                    <ul class="space-y-1 text-gray-300 text-sm">
+                        <li><i class="fas fa-check text-teal-400 mr-2"></i> All current products</li>
+                        <li><i class="fas fa-check text-teal-400 mr-2"></i> All future releases</li>
+                        <li><i class="fas fa-check text-teal-400 mr-2"></i> One-time payment of <strong>$99</strong></li>
+                    </ul>
+                </div>
+                <div>
+                    <button onclick="copyUpgradeText()" class="bg-white text-slate-900 hover:bg-blue-50 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-200">
+                        Message Us To Upgrade
+                    </button>
+                    <p id="copyFeedback" class="text-xs text-gray-400 text-center mt-2 h-4 opacity-0 transition-opacity duration-300">Message copied!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: Gemini Account Credentials (MOVED TO BOTTOM) -->
+        <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-blue-600 relative">
+             <div class="gemini-gradient text-white p-5 text-center relative overflow-hidden">
+                <!-- Decorative sparkles -->
+                <div class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+                <h2 class="text-2xl font-bold uppercase tracking-wide relative z-10"><i class="fas fa-key mr-2"></i> Your Account Access</h2>
+            </div>
+            
+            <div class="p-6">
+                <!-- Critical Instruction -->
+                <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-8 rounded-r shadow-sm">
+                    <div class="flex items-center justify-center md:justify-start">
+                        <i class="fas fa-exclamation-triangle text-red-500 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="text-red-900 font-bold uppercase text-sm tracking-wider">Important Instruction</h3>
+                            <p class="text-red-700 font-bold text-lg">PLEASE LOG IN WITH PHONE FIRST</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credentials Grid -->
+                <div class="space-y-4 mb-8">
+                    
+                    <!-- Account Item Template -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col md:flex-row justify-between items-center gap-3 hover:border-blue-300 transition-colors">
+                        <div class="flex items-center w-full md:w-auto overflow-hidden">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3 text-blue-600 flex-shrink-0"><i class="fas fa-user-astronaut"></i></div>
+                            <div class="overflow-hidden">
+                                <span class="text-[10px] text-slate-400 uppercase font-bold block tracking-wider">Email</span>
+                                <span class="font-mono font-bold text-slate-800 select-all break-all">geminipro2@nddshelpline.site</span>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-auto text-left md:text-right pl-14 md:pl-0">
+                            <span class="text-[10px] text-slate-400 uppercase font-bold block tracking-wider">Password</span>
+                            <span class="font-mono text-blue-700 bg-blue-50 px-2 py-1 rounded select-all">GeminiProUnlimited</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col md:flex-row justify-between items-center gap-3 hover:border-blue-300 transition-colors">
+                        <div class="flex items-center w-full md:w-auto overflow-hidden">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3 text-blue-600 flex-shrink-0"><i class="fas fa-user-astronaut"></i></div>
+                            <div class="overflow-hidden">
+                                <span class="text-[10px] text-slate-400 uppercase font-bold block tracking-wider">Email</span>
+                                <span class="font-mono font-bold text-slate-800 select-all break-all">geminipro@nddshelpline.site</span>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-auto text-left md:text-right pl-14 md:pl-0">
+                            <span class="text-[10px] text-slate-400 uppercase font-bold block tracking-wider">Password</span>
+                            <span class="font-mono text-blue-700 bg-blue-50 px-2 py-1 rounded select-all">GeminiProUnlimited1!!</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col md:flex-row justify-between items-center gap-3 hover:border-blue-300 transition-colors">
+                        <div class="flex items-center w-full md:w-auto overflow-hidden">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3 text-blue-600 flex-shrink-0"><i class="fas fa-user-astronaut"></i></div>
+                            <div class="overflow-hidden">
+                                <span class="text-[10px] text-slate-400 uppercase font-bold block tracking-wider">Email</span>
+                                <span class="font-mono font-bold text-slate-800 select-all break-all">devaneperkasa@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-auto text-left md:text-right pl-14 md:pl-0">
+                            <span class="text-[10px] text-slate-400 uppercase font-bold block tracking-wider">Password</span>
+                            <span class="font-mono text-blue-700 bg-blue-50 px-2 py-1 rounded select-all">masuk123</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col md:flex-row justify-between items-center gap-3 hover:border-blue-300 transition-colors">
+                        <div class="flex items-center w-full md:w-auto overflow-hidden">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3 text-blue-600 flex-shrink-0"><i class="fas fa-user-astronaut"></i></div>
+                            <div class="overflow-hidden">
+                                <span class="text-[10px] text-slate-400 uppercase font-bold block tracking-wider">Email</span>
+                                <span class="font-mono font-bold text-slate-800 select-all break-all">terioscivic@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-auto text-left md:text-right pl-14 md:pl-0">
+                            <span class="text-[10px] text-slate-400 uppercase font-bold block tracking-wider">Password</span>
+                            <span class="font-mono text-blue-700 bg-blue-50 px-2 py-1 rounded select-all">12satudua</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms & Conditions -->
+                <div class="bg-slate-100 rounded-xl p-5 border border-slate-200">
+                    <h4 class="font-bold text-slate-700 mb-3 flex items-center text-sm uppercase tracking-wide">
+                        <i class="fas fa-file-contract mr-2"></i> Gemini AI Terms & Conditions
+                    </h4>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-green-500 text-xs"></i> The product is an AI Gemini account.</li>
+                        <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-green-500 text-xs"></i> Activation is via the official website and app.</li>
+                        <li class="flex items-start"><i class="fas fa-check mt-1 mr-2 text-green-500 text-xs"></i> <strong>Maximum use on 1 device per account.</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function copyUpgradeText() {
+            const textToCopy = "Hi! I'd like to upgrade to the All-Access Pass for $99.";
+            const tempInput = document.createElement("textarea");
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            const feedback = document.getElementById('copyFeedback');
+            feedback.style.opacity = '1';
+            feedback.innerText = "Message copied to clipboard!";
+            
+            setTimeout(() => {
+                feedback.style.opacity = '0';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
